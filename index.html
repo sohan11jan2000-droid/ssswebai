@@ -51,6 +51,8 @@ p {
     border-radius: 30px;
     font-weight: bold;
     transition: 0.3s;
+    border: none;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -156,10 +158,15 @@ footer {
     <h2>Contact Us</h2>
     <p>Tell us about your project and we will get back to you within 24 hours.</p>
 
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <form action="https://formspree.io/f/mbdaqnle" method="POST">
+        
+        <!-- Optional subject line -->
+        <input type="hidden" name="_subject" value="New enquiry from SSS Web AI Website">
+
         <input type="text" name="name" placeholder="Your Name" required><br>
         <input type="email" name="email" placeholder="Your Email" required><br>
         <textarea name="message" rows="5" placeholder="Your Project Details" required></textarea><br>
+        
         <button type="submit" class="button">Send Message</button>
     </form>
 </section>
